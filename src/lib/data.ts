@@ -14,7 +14,7 @@ export const profile: Profile = {
   role: 'Desenvolvedor de Software',
   about:
     'Profissional da área de Tecnologia como Desenvolvedor Web Fullstack e prestador de serviços. Para saber mais, entre em contato.',
-  avatar: 'src/assets/profile-photo.png',
+  avatar: '/profile-photo.png',
   brand: {
     base: '#7417EA',
     dark: '#5A12B6',
@@ -29,7 +29,7 @@ export const profile: Profile = {
     },
     {
       label: 'Site Profissional',
-      href: 'https://seusite.com',
+      href: 'https://gabwestside.com',
       icon: Globe,
       soon: true,
     },
@@ -51,6 +51,6 @@ export const profile: Profile = {
   ],
   pix: {
     key: '00020126580014BR.GOV.BCB.PIX01368443eea2-eed6-46af-859b-b614e3f8b8995204000053039865802BR5917Gabriel Rodrigues6009SAO PAULO62140510NN6SVKtEMx6304F4C8',
-    qrImage: 'src/assets/pix-qr.jpg',
+    qrImage: '/pix-qr.jpg',
   },
 }

@@ -4,16 +4,27 @@
 @layer utilities {
   .loader {
     @apply w-[50px] aspect-square grid rounded-full relative;
-    background:
-      linear-gradient(0deg, rgb(0 0 0 / 50%) 30%, transparent 0 70%, rgb(0 0 0 / 100%) 0) 50%/8% 100%,
-      linear-gradient(90deg, rgb(0 0 0 / 25%) 30%, transparent 0 70%, rgb(0 0 0 / 75%) 0) 50%/100% 8%;
+    background: linear-gradient(
+          0deg,
+          rgb(116 23 234 / 50%) 30%,
+          transparent 0 70%,
+          rgb(116 23 234 / 100%) 0
+        )
+        50% / 8% 100%,
+      linear-gradient(
+          90deg,
+          rgb(156 39 255 / 25%) 30%,
+          transparent 0 70%,
+          rgb(90 18 182 / 100%) 0
+        )
+        50% / 100% 8%;
     background-repeat: no-repeat;
     animation: spin-steps 1s infinite steps(12);
   }
 
   .loader::before,
   .loader::after {
-    content: "";
+    content: '';
     @apply absolute inset-0 rounded-full;
     background: inherit;
     opacity: 0.915;

@@ -29,9 +29,8 @@ export const profile: Profile = {
     },
     {
       label: 'Site Profissional',
-      href: 'https://gabwestside.com',
+      href: 'https://gabwestside.vercel.app/',
       icon: Globe,
-      soon: true,
     },
     { label: 'GitHub', href: 'https://github.com/gabwestside/', icon: Github },
     {

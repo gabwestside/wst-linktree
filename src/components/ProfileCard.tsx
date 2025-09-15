@@ -3,6 +3,7 @@ import { useState } from 'react'
 import type { Profile } from '../lib/types'
 import { LinkRow } from './LinkRow'
 import { PixModal } from './PixModal'
+import Loading from './Loading'
 
 interface ProfileCardProps {
   profile: Profile
@@ -10,12 +11,20 @@ interface ProfileCardProps {
 
 export function ProfileCard({ profile }: ProfileCardProps) {
   const [pixOpen, setPixOpen] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   return (
     <section className='w-full max-w-xl bg-neutral-900/80 backdrop-blur rounded-3xl shadow-2xl border border-white/10 p-6'>
       <div className='w-full flex justify-center -mt-16'>
+        {loading && (
+          <div className='absolute inset-0 flex items-center justify-center'>
+            <Loading />
+          </div>
+        )}
+        
         <div className='relative'>
           <img
+            onLoad={() => setLoading(false)}
             src={profile.avatar}
             alt={profile.name}
             className='h-28 w-28 rounded-full object-cover ring-4 ring-white/90 shadow-xl'

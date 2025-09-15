@@ -10,15 +10,15 @@ export default function App() {
           background: `linear-gradient(180deg, ${profile.brand.headerFrom} 0%, ${profile.brand.headerTo} 100%)`,
         }}
       />
-      
+
       <main className='-mt-20 pb-24 flex items-start justify-center px-4'>
         <ProfileCard profile={profile} />
       </main>
-      
+
       <footer className='text-center text-xs text-neutral-400 pb-10'>
         Feito com ❤️ por{' '}
         <a
-          href='github.com/gabwestside'
+          href='https://github.com/gabwestside'
           target='_blank'
           rel='noreferrer'
           className='underline'
